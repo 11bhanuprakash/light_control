@@ -1,5 +1,5 @@
 import cv2
-import mediapipe as mp
+import mediapipe as mp #Hand detection library 
 import time
 import tinytuya
 
@@ -108,3 +108,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
