@@ -4,6 +4,8 @@ Control your Tuya Smart Bulb using real-time hand gesture recognition with OpenC
 
 This project uses your webcam to detect the number of fingers shown and changes the bulb color accordingly.
 
+
+
 🚀 Features
 
 ✋ Real-time hand tracking using MediaPipe
@@ -15,6 +17,8 @@ This project uses your webcam to detect the number of fingers shown and changes 
 📷 Live webcam visualization with OpenCV
 
 ⚡ Sends command only when gesture changes (optimized communication)
+
+
 
 🛠️ Technologies Used
 
@@ -30,72 +34,77 @@ Computer Vision
 
 IoT (Tuya Smart Bulb)
 
+
+
 📌 How It Works
 
-Webcam captures video frames.
+1) Webcam captures video frames.
 
-MediaPipe detects hand landmarks.
+2) MediaPipe detects hand landmarks.
 
-Finger counting algorithm determines number of fingers raised.
+3) Finger counting algorithm determines number of fingers raised.
 
-Based on finger count, a color is selected.
+4) Based on finger count, a color is selected.
 
-TinyTuya sends RGB command to the smart bulb.
+5) TinyTuya sends RGB command to the smart bulb.
 
-Color changes only when gesture changes (to prevent repeated commands).
+6) Color changes only when gesture changes (to prevent repeated commands).
+
 
 🎨 Gesture → Color Mapping
-Fingers Raised	Bulb Color
-1	🔴 Red
-2	🟡 Yellow
-3	🟢 Green
-4	🔵 Blue
-5	⚪ White
-🧠 Project Structure
-light_control_with_movement.py
+Fingers Raised	                  Bulb Color
+    1	                             🔴 Red
+    2	                             🟡 Yellow
+    3	                             🟢 Green
+    4	                             🔵 Blue
+    5	                             ⚪ White
+
+    
+
+
 Main Components
 1️⃣ Tuya Bulb Setup
 
-Connects to smart bulb using:
+   Connects to smart bulb using:
 
-Device ID
+          Device ID
 
-Device IP
+          Device IP
 
-Local Key
+          Local Key
 
-Uses TinyTuya library
+   Uses TinyTuya library
 
 2️⃣ Hand Detector Class
 
-Detects one hand
+   Detects one hand
 
-Tracks landmarks
+   Tracks landmarks
 
-Draws hand skeleton
+   Draws hand skeleton
 
 3️⃣ Finger Counting Logic
 
-Thumb → Checked using X-axis comparison
+  Thumb → Checked using X-axis comparison
 
-Other fingers → Checked using Y-axis comparison
+  Other fingers → Checked using Y-axis comparison
 
-Returns total raised fingers
+  Returns total raised fingers
 
 4️⃣ Color Control Function
 
-Maps finger count to RGB values and sends color command to bulb.
+  Maps finger count to RGB values and sends color command to bulb.
 
 5️⃣ Main Loop
 
-Captures webcam frame
+  Captures webcam frame
 
-Detects hand
+  Detects hand
 
-Counts fingers
+  Counts fingers
 
-Changes bulb color
+  Changes bulb color
 
-Displays finger count on screen
+  Displays finger count on screen
 
-Press ESC to exit
+  Press ESC to exit
