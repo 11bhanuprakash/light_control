@@ -18,7 +18,7 @@ This project uses your webcam to detect the number of fingers shown and changes 
 
 ⚡ Sends command only when gesture changes (optimized communication)
 
-
+--------------------------------------------------------------------------------------------------------
 
 🛠️ Technologies Used
 
