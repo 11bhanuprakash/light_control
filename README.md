@@ -4,7 +4,7 @@ Control your Tuya Smart Bulb using real-time hand gesture recognition with OpenC
 
 This project uses your webcam to detect the number of fingers shown and changes the bulb color accordingly.
 
-
+-------------------------------------------------------------------------------------------------------
 
 🚀 Features
 
